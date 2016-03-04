@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Queries</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.con {
+  width: 100%;
+
+}
+.col1, .col2, .col3{
+  background-color: #A0A0A0; 
+  float: left;
+  padding-left:10px;
+  border: 1px solid black;
+}
+#p11, #p12, #p13{
+  margin: auto;
+  float:left;
+}
+.col12, .col22, .col32{
+  clear: left;
+  float: right;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+}
+.col12{
+      background-color: #C00000; 
+}
+.col22{
+      background-color: #990066; 
+} 
+.col32{
+      background-color: #99FFCC; 
+}
+
+
+
+/********** Desktop only **********/
+@media (min-width: 992px) {
+.col1{
+    width: 33.33%;
+}
+.col2{
+    width: 33.33%;
+}
+.col3{
+    width: 33.33%;
+}
+}
+
+
+/********** Tablet only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.col1 {
+    width: 50%;
+  }
+.col2 {
+    width: 50%;
+  }
+.col3 {
+    width: 100%
+  }
+}
+}
+/********** Mobile only **********/
+@media (max-width: 767px){
+.col1 {
+    width: 100%;
+  }
+.col2 {
+    width: 100%;
+  }
+.col3 {
+    width: 100%
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>First</h1>
+<div class = "con">
+<div class = "col1"><div class="col12">First</div><p id="p11">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse a nisi blandit, facilisis eros in, hendrerit risus. Phasellus ligula urna, ullamcorper sit amet ante quis, luctus vehicula augue. Cras sed massa nisl. Aenean bibendum placerat eros quis sollicitudin. Ut leo nibh, hendrerit sodales malesuada in, semper ac augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam neque diam, feugiat imperdiet efficitur rutrum, sagittis id massa. Praesent quis mauris tellus. Nam vel orci vehicula, efficitur sem at, viverra felis. Nulla dignissim at turpis ac scelerisque. Nullam nec magna augue. Suspendisse vitae massa fringilla, suscipit felis id, vulputate sem. Curabitur justo magna, mollis ut tristique in, maximus id sem.</p></div>
+<div class = "col2"><div class="col22">Second</div><p id="p12">Quisque laoreet suscipit tellus eu tincidunt. Fusce erat purus, venenatis ultricies dolor eu, aliquam iaculis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam digniss</p></div>
+<div class = "col3"><div class="col32">Third</div><p id="p13">Donec dolor felis, tincidunt ac lacus nec, rhoncus dictum ipsum. Donec eget aliquet erat. Etiam pharetra mauris erat, in dignissim elit sollicitudin at. Nullam mauris eros, varius iaculis maximus non, consequat porta eros. Aenean consectetur at odio a bibendum. Sed nec ipsum sodales, vulputate magna pretium, posuere leo. Aliquam rhoncus lacinia metus ut malesuada.Nulla sed tortor ac felis porttitor malesuada et nec enim. Curabitur id tempor nunc. Quisque vel risus sem. Nulla tincidunt nulla sed ipsum accumsan varius. Quisque sit amet rutrum leo, sed porttitor dui. Sed ornare interdum dolor, sit amet sodales nisi dignissim sed. Curabitur sed elit est. Sed sed odio at orci faucibus congue. Aenean id urna ut purus dictum commodo quis eu nisi. Curabitur dapibus ultricies leo quis facilisis. Ut tortor diam, eleifend sit amet molestie vehicula, scelerisque id quam. Cras ut velit odio.</p></div>
+</div>
+</body>
+</html>
