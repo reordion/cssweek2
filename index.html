@@ -21,16 +21,19 @@ h1{
   background-color: #A0A0A0;
   float: left;
   border: 1px solid black;
+  border-radius:5px;
 }
 #p11, #p12, #p13{
   margin-left: 10px;
   float:left;
+  
 }
 .col12, .col22, .col32{
   clear: left;
   float: right;
   width: 50px;
   border: 1px solid black;
+  border-radius:5px;
   text-align: center;
 }
 .col12{
@@ -43,18 +46,28 @@ h1{
       background-color: #99FFCC; 
 }
 
-
+#footer{
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 1em;
+    margin-top: -3em;
+    background-color: #A0A0A0;
+}
 
 /********** Desktop only **********/
 @media (min-width: 992px) {
 .col1{
-    width: 33.33%;
+    width: 31.33%;
+    margin: 1% 1%;
 }
 .col2{
-    width: 33.33%;
+    width: 31.33%;
+    margin: 1% 1%;
 }
 .col3{
-    width: 33.33%;
+    width: 31.33%;
+    margin: 1% 1%;
 }
 }
 
@@ -62,26 +75,32 @@ h1{
 /********** Tablet only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 .col1 {
-    width: 50%;
+    width: 48%;
+    margin: 1% 1%;
   }
 .col2 {
-    width: 50%;
+    width: 48%;
+    margin: 1% 1%;
   }
 .col3 {
-    width: 100%
+    width: 98%;
+    margin: 1% 1%;
   }
 }
 }
 /********** Mobile only **********/
 @media (max-width: 767px){
 .col1 {
-    width: 100%;
+    width: 98%;
+    margin: 1% 1%;
   }
 .col2 {
-    width: 100%;
+    width: 98%;
+    margin: 1% 1%;
   }
 .col3 {
-    width: 100%
+    width: 98%;
+    margin: 1% 1%;
   }
 }
 
@@ -93,6 +112,9 @@ h1{
 <div class = "col1"><div class="col12">First</div><p id="p11">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse a nisi blandit, facilisis eros in, hendrerit risus. Phasellus ligula urna, ullamcorper sit amet ante quis, luctus vehicula augue. Cras sed massa nisl. Aenean bibendum placerat eros quis sollicitudin. Ut leo nibh, hendrerit sodales malesuada in, semper ac augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam neque diam, feugiat imperdiet efficitur rutrum, sagittis id massa. Praesent quis mauris tellus. Nam vel orci vehicula, efficitur sem at, viverra felis. Nulla dignissim at turpis ac scelerisque. Nullam nec magna augue. Suspendisse vitae massa fringilla, suscipit felis id, vulputate sem. Curabitur justo magna, mollis ut tristique in, maximus id sem.</p></div>
 <div class = "col2"><div class="col22">Second</div><p id="p12">Quisque laoreet suscipit tellus eu tincidunt. Fusce erat purus, venenatis ultricies dolor eu, aliquam iaculis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam digniss</p></div>
 <div class = "col3"><div class="col32">Third</div><p id="p13">Donec dolor felis, tincidunt ac lacus nec, rhoncus dictum ipsum. Donec eget aliquet erat. Etiam pharetra mauris erat, in dignissim elit sollicitudin at. Nullam mauris eros, varius iaculis maximus non, consequat porta eros. Aenean consectetur at odio a bibendum. Sed nec ipsum sodales, vulputate magna pretium, posuere leo. Aliquam rhoncus lacinia metus ut malesuada.Nulla sed tortor ac felis porttitor malesuada et nec enim. Curabitur id tempor nunc. Quisque vel risus sem. Nulla tincidunt nulla sed ipsum accumsan varius. Quisque sit amet rutrum leo, sed porttitor dui. Sed ornare interdum dolor, sit amet sodales nisi dignissim sed. Curabitur sed elit est. Sed sed odio at orci faucibus congue. Aenean id urna ut purus dictum commodo quis eu nisi. Curabitur dapibus ultricies leo quis facilisis. Ut tortor diam, eleifend sit amet molestie vehicula, scelerisque id quam. Cras ut velit odio.</p></div>
+<div id="footer">
 </div>
+</div>
+
 </body>
 </html>
